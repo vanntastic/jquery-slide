@@ -4,7 +4,7 @@
 	
 	USAGE : 
 	
-  	$('a#slide').slide();
+  	$('a.slide').slide();
 	
 *****/
 
