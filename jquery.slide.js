@@ -13,10 +13,11 @@
     $.fn.slide = function() {
       
     	$(this).click(function () {	
-  			elementClick = $(this).attr("href")
+  			elementClick = $(this).attr("href");
   			destination = $(elementClick).offset().top;
   			$("html:not(:animated),body:not(:animated)").animate({ scrollTop: destination}, 1100 );
-  		  	return false;
+  			
+  		  return elementClick.charAt(0) == "#" ? false : true;
   		})           
             
     }
